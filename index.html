@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Admin License Portal</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Non-dismissible modal dialog -->
+    <div
+      class="modal fade"
+      id="adminDialog"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="adminDialogLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content custom-modal">
+          <div class="modal-header custom-header">
+            <h5 class="modal-title" id="adminDialogLabel">
+              School License Communication
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form id="emailForm" class="email-form">
+              <div class="mb-3">
+                <label for="recipient" class="form-label">To:</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="recipient"
+                  placeholder="Enter recipient email address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject:</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="subject"
+                  placeholder="Enter email subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="body" class="form-label">Message:</label>
+                <textarea
+                  class="form-control custom-textarea"
+                  id="body"
+                  rows="8"
+                  placeholder="Enter your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn custom-send-btn">
+                  <span class="btn-text">Send Message</span>
+                  <span
+                    class="btn-spinner spinner-border spinner-border-sm d-none"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
