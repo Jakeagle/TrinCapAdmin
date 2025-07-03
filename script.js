@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Azure server base URL
   const SERVER_BASE_URL =
-    "https://moneytalkspurchasing-2-bkftf2deeyexc3c0.eastus-01.azurewebsites.net";
+    "https://tcpurchasingserver-production.up.railway.app";
 
   // Show the modal immediately and prevent closing
   const adminModal = new bootstrap.Modal(
